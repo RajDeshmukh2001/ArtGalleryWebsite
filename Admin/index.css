@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Varela+Round&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --font-color : #6b6b6b;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+/* ScrollBar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #e4e4e4;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border: 2px solid transparent;
+    backface-visibility: content-box;
+    border-radius: 50px;
+}
+
+/* Login Form Section */
+.adminLoginForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 50px 50px -50px darkslategray;
+}
+
+.adminLoginForm .myForm{
+    width: 270px;
+    margin-right: 30px;
+}
+
+.adminLoginForm .myForm h2{
+    color: #1c1c1e;
+    margin-bottom: 20px;
+}
+
+.adminLoginForm .myForm input{
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #1c1c1e;
+    margin-bottom: 25px;
+    padding: 7px 0;
+    font-size: 15px;
+}
+
+.adminLoginForm .myForm button{
+    color: #fff;
+    background-color: #1c1c1e;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    padding: 6px 14px;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+.adminLoginForm .myForm button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Navbar Section */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+.navbar .logo{
+    position: absolute;
+    top: .4rem;
+    left: 2rem;
+    width: 250px;
+    height: 58px;
+}
+
+.navbar .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .nav {
+    position: absolute;
+    top: 1.4rem;
+    right: 14rem;
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar .nav img{
+    height: 24px;
+    opacity: .8;
+}
+
+.navbar .nav h4{
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 10px;
+    color: rgb(0, 102, 102);
+}
+
+.navbar .logout{
+    position: absolute;
+    top: 1.4rem;
+    right: 4rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar .logout img{
+    position: absolute;
+    top: 3px;
+    right: 5.1rem;
+    opacity: .8;
+}
+
+.navbar .logout input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #1c1c1e;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+
+.navbar .logout input:hover{
+    cursor: pointer;
+    color: #00978b;
+}
+
+/* Left Navbar Section */
+.container{
+    display: flex;
+    height: 89vh;
+}
+
+.container .leftNavbar{
+    flex: 2;
+    height: 100%;
+    background-color: rgb(0, 85, 85);
+}
+
+.container .leftNavbar ul li a{
+    display: block;
+    list-style: none;
+    padding: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(0, 53, 53);
+}
+
+.container .leftNavbar ul li a:hover{
+    background-color: #004044;
+}
+
+.container .mainContent{
+    flex: 8;
+    height: 100%;
+    padding: 40px 100px;
+    overflow-y: scroll;
+}
+
+/* Add Button Section */
+.container .mainContent .addBtn h1{
+    margin-bottom: 1rem;
+}
+
+.container .mainContent .addBtn a{
+    text-decoration: none;
+    padding: 7px 7px;
+    background-color: #1c1c1e;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.container .mainContent .addBtn a:hover{
+    color:rgb(0, 102, 102);
+}
+
+/* Admin Section */
+.container .mainContent .adminTable{
+    margin-top: 2rem;
+}
+
+.container .mainContent .adminTable .tbl{
+    border-collapse: separate;
+    border-spacing: 0 18px;
+}
+
+.container .mainContent .adminTable .tbl th{
+    padding: 5px 25px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+    border-bottom: .5px solid #6b6b6b;
+}
+
+.container .mainContent .adminTable .tbl td{
+    padding: 8px 25px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: .5px solid #6b6b6b;
+}
+
+.container .mainContent .adminTable .tbl td a{
+    color: #fff;
+    background-color: #1c1c1e;
+    border-radius: 2px;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.container .mainContent .adminTable .tbl td a:hover{
+    color:rgb(0, 102, 102);
+}
+
+.container .mainContent .adminTable .tbl .deleteBtn{
+    margin-left: 20px;
+}
+
+/* Arts Section */
+.container .mainContent .artsTable .tbl th{
+    padding: 5px 15px;
+}
+
+.container .mainContent .artsTable .tbl td{
+    padding: 5px 15px;
+}
+
+.container .mainContent .artsTable .tbl img{
+    width: 100px;
+}
+
+.container .mainContent .artsTable .tbl .deleteBtn{
+    margin-left: 13px;
+}
+
+.container .mainContent .artsTable .tbl .srno{
+    padding-left: 0;
+}
+
+.container .mainContent .artsTable .tbl .buttons{
+    display: flex;
+    height: 120px;
+}
+
+.container .mainContent .artsTable .tbl .buttons a{
+    margin-top: 22%;
+    height: 34px;
+}
+
+/* Artists Section */
+.container .mainContent .artistTable .tbl th{
+    padding: 5px 15px;
+}
+
+.container .mainContent .artistTable .tbl td{
+    position: relative;
+    padding: 5px 15px;
+}
+
+.container .mainContent .artistTable .tbl td img{
+    width: 120px;
+    border-radius: 2px;
+}
+
+.container .mainContent .artistTable .tbl .deleteBtn{
+    margin-left: 13px;
+}
+
+.container .mainContent .artistTable .tbl .srno{
+    padding-left: 0;
+}
+
+.container .mainContent .artistTable .tbl .buttons{
+    display: flex;
+    height: 200px;
+}
+
+.container .mainContent .artistTable .tbl .buttons a{
+    margin-top: 40%;
+    height: 34px;
+}
+
+/* User Section */
+.container .mainContent .userTable .tbl{
+    width: 70%;
+}
+
+.container .mainContent .userTable .tbl th{
+    padding: 3px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: .5px solid #6b6b6b;
+}
+
+.container .mainContent .userTable .tbl td{
+    padding: 6px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: .5px solid #6b6b6b;
+} 
+
+.container .mainContent .adminTable2 .tbl th{
+    padding: 3px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    border-bottom: .5px solid #6b6b6b;
+}
+
+.container .mainContent .adminTable2 .tbl td{
+    padding: 6px 25px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: .5px solid #6b6b6b;
+} 
+
+/* Order Section */
+.container .mainContent .orderTable .tbl{
+    width: 100%;
+}
+
+.container .mainContent .orderTable .tbl th{
+    padding: 5px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    border-bottom: .5px solid #6b6b6b;
+}
+
+.container .mainContent .orderTable .tbl td{
+    padding: 7px 18px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: .5px solid #6b6b6b;
+}
+
+.container .mainContent .orderTable .tbl .buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.container .mainContent .orderTable .tbl .view{
+    margin-left: 15px;
+}
+
+.container .mainContent .orderTable .tbl td img{
+    width: 100px;
+}
+
+.container .mainContent .viewTable .tbl{
+    width: 100%;
+}
+
+.container .mainContent .viewTable .tbl th{
+    padding: 5px 12px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    border-bottom: .5px solid #6b6b6b;
+}
+
+.container .mainContent .viewTable .tbl td{
+    padding: 7px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: .5px solid #6b6b6b;
+}
+
+.container .mainContent .viewTable .tbl td img{
+    width: 100px;
+}
+
+/* Update Status Section */
+.container .mainContent .updateStatus{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+
+.container .mainContent .updateStatus fieldset{
+    padding: 15px;
+    border: .5px solid var(--font-color);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .mainContent .updateStatus fieldset legend{
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.container .mainContent .updateStatus fieldset select{
+    appearance: none;
+    margin-top: 1.5rem;
+    padding: 4px 8px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #1c1c1e;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container .mainContent .updateStatus fieldset input{
+    margin-top: 2rem;
+    margin-left: 1.65rem;
+    font-size: 15px;
+    outline: none;
+    border: .5px solid #1c1c1e;
+    padding: 4px 8px;
+    background-color: #1c1c1e;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.container .mainContent .updateStatus fieldset input:hover{
+    color: rgb(0, 102, 102);
+}
+
+/* Add Admin Section */
+.container .mainContent .addContent fieldset{
+    margin-top: 10px;
+    padding: 15px;
+    border: .5px solid var(--font-color);
+}
+
+.container .mainContent .addContent legend{
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1c1c1e;
+    text-transform: uppercase;
+}
+
+.container .mainContent .addContent label,
+.container .mainContent .addContent input{
+    margin: 15px 15px;
+    font-size: 16px;
+}
+
+.container .mainContent .addContent input{
+    padding: 3px 10px;
+    border: .3px solid var(--font-color);
+    outline: none;
+    font-size: 15px;
+}
+
+.container .mainContent .addContent input[type=email]{
+    margin-left: 4.25rem;
+}
+
+.container .mainContent .addContent input[type=password]{
+    margin-left: 1.2rem;
+}
+
+.container .mainContent .addContent input[type=text]:first-of-type{
+    margin-left: 3.1rem;
+}
+
+.container .mainContent .addContent button{
+    color: #fff;
+    background-color: #1c1c1e;
+    border: none;
+    border-radius: 2px;
+    margin: 15px 15px;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container .mainContent .addContent button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Add Arts Section */
+.container .mainContent .addarts .artFile{
+    margin-left: 48px;
+    border: none;
+    cursor: pointer;
+}
+
+.container .mainContent .addarts .artName{
+    margin-left: 33px;
+}
+
+.container .mainContent .addarts .artTec{
+    margin-left: 25px;
+}
+
+.container .mainContent .addarts .artPrice{
+    margin-left: 69px;
+}
+
+/* Add Artists Section */
+.container .mainContent .addartists .artFile{
+    margin-left: 48px;
+    border: none;
+    cursor: pointer;
+}
+
+.container .mainContent .addartists .acity{
+    margin-left: 76px;
+}
+
+.container .mainContent .addartists .adesc{
+    margin: 0 0 8px 16px;
+    vertical-align: top;
+    padding: 3px 10px;
+    border: .3px solid var(--font-color);
+    outline: none;
+    font-size: 15px;
+}
+
+/* Dashboard  */
+.container .dashb{
+    background: #f5f5f5;
+}
+
+.container .mainContent .items{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .mainContent .items .item1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 28%;
+    padding: 2% 2%;
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+    background-color: #fff;
+}
+
+.container .mainContent .items .item1 .iconBox{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(76, 219, 188);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container .mainContent .items .item1 .iconBox img{
+    width: 64px;
+    height: 64px;
+}
+
+.container .mainContent .items .item1 .content{
+    margin-left: 14px;
+    margin-top: 17px;
+}
+
+.container .mainContent .items .item1 .content h3{
+    font-weight: 550;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container .mainContent .items .item1 .content h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.container .mainContent .board{
+    margin-top: 2%;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.container .mainContent .board .recentOrders{
+    position: relative;
+    padding-top: 0;
+    min-height: 300px;
+    background: #fff;
+    padding: 25px 15px;
+    box-shadow: var(--shadow);
+}
+
+.boardhead{
+    font-size: 1.3rem;
+    padding-left: 10px;
+}
+
+.container .mainContent .board .recentOrders table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.board table thead th{
+    font-size: 1rem;
+    text-align: start;
+    padding: 15px 10px;
+}
+
+.board .recentOrders table tr{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.board .recentOrders table tbody tr:hover{
+    background: #004044;
+    color: #fff;
+}
+
+.board .recentOrders table td{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 8px 10px;
+}
+
+.board .recentOrders table td img{
+    width: 40px;
+}
+
+.board .recentOrders table tbody tr:last-child{
+    border-bottom: none;
+}
+
+.board .recentUsers{
+    margin-left: 50px;
+    background: #fff;
+    padding: 25px 15px;
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+}
+
+.head{
+    font-size: 1.3rem;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.board .recentUsers table tr{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.board .recentUsers table tbody tr:last-child{
+    border-bottom: none;
+}
+
+.board .recentUsers table h4{
+    font-size: 1rem;
+    padding: 8px 20px;
+}
+
+.board .recentUsers table h4 span{
+    font-size: .8rem;
+    font-weight: 400;
+    padding-left: 0;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.board .recentUsers img{
+    width: 32px;
+    margin-left: 10px;
+}
