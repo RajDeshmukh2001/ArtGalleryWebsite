@@ -7,6 +7,7 @@ Client
 ✔ Front-end Tools
 - HTML5
 - CSS3
+- JavaScript
 
 ✔ Back-end Tools
 - PHP
